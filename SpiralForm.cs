@@ -36,7 +36,7 @@ namespace Spiral {
 				// for example if the ratio between the denominators stayed the same while decreasing their values, the shape would stay the same
 				// but the quality would decrease. But if for example you increased rad's denominator while leaving rot's as it is, you would make the spiral tigher.
 				// Also: NEVER set the denominator of one of them in one equation to a different one than in the other one,
-				// because that mekes cPoint and nPoint belong to different Spirals and thus can lead to some trippy results.
+				// because that makes cPoint and nPoint belong to different Spirals and thus can lead to some trippy results.
 				Point cPoint = ddToPoint(calPoint(rot/10, rad/2, ClientSize.Width/2, ClientSize.Height/2));
 				Point nPoint = ddToPoint(calPoint(++rot/10, ++rad/2, ClientSize.Width/2, ClientSize.Height/2));
 
